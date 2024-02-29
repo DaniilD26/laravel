@@ -13,7 +13,7 @@
             @guest()
                 <a style="width: 50px; font-size: 15pt; margin-right: 20px; color: #c38134" href="{{ route('loginForm') }}">Создать заказ</a>
                 <a style="width: 50px; font-size: 15pt; margin-right: 20px; color: #c38134" href="{{ route('loginForm') }}">Войти</a>
-                <a style="width: 50px; font-size: 15pt; margin-right: 20px; color: #c38134" href="{{ route('loginForm') }}">Регистрация</a>
+                <a style="width: 50px; font-size: 15pt; margin-right: 20px; color: #c38134" href="{{ route('register') }}">Регистрация</a>
             @endguest
             @auth()
                 @if(Auth::user()->isAdmin())
@@ -30,7 +30,7 @@
             @endauth
             <hr>
     </header>
-    <img src="{{asset('/images/onlajn-kassy.jpg')}}" alt="e5tre">
+    <img src="{{asset('/images/onlajn-kassy.jpg')}}" alt="kassy">
     @yield('content')
 </div>
 </body>
